@@ -86,4 +86,6 @@ Install the necessary Python packages using pip:
 
 ```sh
 pip install torch torch-geometric networkx scikit-learn pandas matplotlib
+```
+psssss not needed if you already did the requirements.txt
 
