@@ -1,6 +1,6 @@
 
 # FOR SPATIAL DESIGN STUDIO 
-1. Create your environment and interpreter
+1. Create your environment and interpreter. *Requires Python 3.10*
 2. Run ``` pip install -r requirements.txt ```
 
 ## Information about this repo
@@ -9,6 +9,7 @@
 3. ```visualize_graph.py``` supposed to show you what the graph looks like but I dont see anything so far
 
 ## How to run and what to run
+### For actual data. Otherwise don't modify anything and run steps 6 to 9. It will run on their sample projects and their already split graphml in the 3.InputML folder.
 1. Clear all data in 1.,2.,3.,4.,5. Your directory should look like:
 ```
 ROOT
@@ -19,8 +20,8 @@ ROOT
         ├── Train data
         ├── Test data
         └── Validation data
-    └── 4.OutputML_GCN/ # Output results from GCN model
-    └── 5.OutputML_GAT/ # Output results from GAT model
+    └── 4.OutputML_GCN # Output results from GCN model
+    └── 5.OutputML_GAT # Output results from GAT model
     └── ExtractGraph.py
     └── ServerMLviaGAT.py
     └── ServerMLviaGCN.py
@@ -30,14 +31,14 @@ ROOT
 └── requirements.txt
 ```
 
-1. Upload your text files into ```1.Input``` folder
-2. Change the directory of your input folder in ```ExtractGraph.py``` to the ```1.Input``` folder.
-3. Create and run a new python script to split the files in ```1.Input``` into ```3.InputML/Train data```, ```3.InputML/Test data```, and ```3.InputML/Validation data```.
-4. Change the directory of your input folder in ```ServerMLviaGAT.py```, and ```ServerMLviaGCN.py``` to the TRAIN, TEST and VALIDATION folders respectively in ```3.InputML```. Output directories should still be the same.
-2. ```cd Automated-BIM-Model-Annotation-via-Graph-Neural-Networks-Model-Architecture ```
-2. ```python ExtractGraphy.py```
-3. ```python ServerMLviaGAT.py```
-4. ```python ServerMLviaGCN.py```
+2. Upload your text files into ```1.Input``` folder
+3. Change the directory of your input folder in ```ExtractGraph.py``` to the ```1.Input``` folder.
+4. Create and run a new python script to split the files in ```1.Input``` into ```3.InputML/Train data```, ```3.InputML/Test data```, and ```3.InputML/Validation data```.
+5. Change the directory of your input folder in ```ServerMLviaGAT.py```, and ```ServerMLviaGCN.py``` to the TRAIN, TEST and VALIDATION folders respectively in ```3.InputML```. Output directories should still be the same.
+6. ```cd Automated-BIM-Model-Annotation-via-Graph-Neural-Networks-Model-Architecture ```
+7. ```python ExtractGraphy.py```
+8. ```python ServerMLviaGAT.py```
+9. ```python ServerMLviaGCN.py```
 
 # Cloned repo instructions below
 
